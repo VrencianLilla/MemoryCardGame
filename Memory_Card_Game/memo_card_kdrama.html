@@ -5,7 +5,7 @@
     <link href="style.css" rel="stylesheet">
     <script src="script.js" async></script>
     <title>Memory Card Game</title>
-    <link rel="icon" type="image/png" href="../Kategoria_oldal/Kepek/white.png">
+    <link rel="icon" type="image/png" href="../Images/white.png">
 </head>
 <header>
     <div class="main">
@@ -16,237 +16,238 @@
 </header>
 
 <body>
-    <div class="title">
-        <h1>Kdrama memory card game</h1>
-    </div>
-    <div class="overlay-text visible">
-        Click for start
-    </div>
-    <div id="game-over-text" class="overlay-text">
-        DEFEAT
-        <span class="overlay-text-small">Click for restart</span>
-    </div>
-    <div id="victory-text" class="overlay-text">
-        VICTORY
-        <span class="overlay-text-small">Click for restart</span>
-    </div>
-    <div class="game-container">
-        <div class="game-info-container">
-            <div class="game-info">
-                Time: <span id="time-remaining">100</span>
-            </div>
-            <div class="game-info" id="egyedi">
-                Cards: <span id="megtalalt-kartyak">0</span>
-            </div>
+    <div>
+        <div class="title">
+            <h1>Kdrama memory card game</h1>
         </div>
+        <div class="overlay-text visible">
+            Click for start
+        </div>
+        <div id="game-over-text" class="overlay-text">
+            DEFEAT
+            <span class="overlay-text-small">Click for restart</span>
+        </div>
+        <div id="victory-text" class="overlay-text">
+            VICTORY
+            <span class="overlay-text-small">Click for restart</span>
+        </div>
+        <div class="game-container">
+            <div class="game-info-container">
+                <div class="game-info">
+                    Time: <span id="time-remaining">100</span>
+                </div>
+                <div class="game-info" id="egyedi">
+                    Cards: <span id="megtalalt-kartyak">0</span>
+                </div>
+            </div>
 
-        <!-- City_Hunter Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- City_Hunter Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/City_Hunter.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/City_Hunter.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/City_Hunter.jpg">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- W Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/W.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/City_Hunter.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/W.jpg">
+                </div>
             </div>
-        </div>
-        <!-- W Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- Hotel_Del_Luna Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Hotel_Del_Luna.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/W.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Hotel_Del_Luna.jpg">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- Doctor_Strange Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Doctor_Strange.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/W.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Doctor_Strange.jpg">
+                </div>
             </div>
-        </div>
-        <!-- Hotel_Del_Luna Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- Itaewon Class Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Itaewon_Class.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Hotel_Del_Luna.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Itaewon_Class.jpg">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- Vincenzo Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Vincenzo.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Hotel_Del_Luna.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Vincenzo.jpg">
+                </div>
             </div>
-        </div>
-        <!-- Doctor_Strange Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- dodosolsollalasol Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/dodosolsollalasol.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Doctor_Strange.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/dodosolsollalasol.jpg">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- blood Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/blood.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Doctor_Strange.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/blood.jpg">
+                </div>
             </div>
-        </div>
-        <!-- Itaewon Class Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- ramen_shop Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/ramen_shop.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Itaewon_Class.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/ramen_shop.jpg">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- her private life Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Her_Private_Life.jpeg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Itaewon_Class.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Her_Private_Life.jpeg">
+                </div>
             </div>
-        </div>
-        <!-- Vincenzo Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- romance is a bonus book Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Romance_is_a_bonus_book.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Vincenzo.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/Romance_is_a_bonus_book.jpg">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
+            <!-- love alarm Card -->
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/love_alarm.jpg">
+                </div>
             </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Vincenzo.jpg">
+            <div class="card">
+                <div class="card-back card-face">
+                    <img class="hatter-kocsi" src="../Images/back.jpg">
+                </div>
+                <div class="card-front card-face">
+                    <img class="card-value" src="../Images/love_alarm.jpg">
+                </div>
             </div>
-        </div>
-        <!-- dodosolsollalasol Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/dodosolsollalasol.jpg">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/dodosolsollalasol.jpg">
-            </div>
-        </div>
-        <!-- blood Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/blood.jpg">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/blood.jpg">
-            </div>
-        </div>
-        <!-- ramen_shop Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/ramen_shop.jpg">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/ramen_shop.jpg">
-            </div>
-        </div>
-        <!-- her private life Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Her_Private_Life.jpeg">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Her_Private_Life.jpeg">
-            </div>
-        </div>
-        <!-- romance is a bonus book Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Romance_is_a_bonus_book.jpg">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/Romance_is_a_bonus_book.jpg">
-            </div>
-        </div>
-        <!-- love alarm Card -->
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/love_alarm.jpg">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="hatter-kocsi" src="../Images/back.jpg">
-            </div>
-            <div class="card-front card-face">
-                <img class="card-value" src="../Images/love_alarm.jpg">
-            </div>
-        </div>
 
 
 
 
-    </div>
+        </div>
 </body>
