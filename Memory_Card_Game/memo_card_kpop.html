@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" async></script>
+    <title>Memory Card Game</title>
+    <link rel="icon" type="image/png" href="../Kategoria_oldal/Kepek/white.png">
+</head>
+<header>
+    <div class="main">
+        <ul>
+            <li><a href="../Main_Page/oldal.html">Main Page</a></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <div class="title">
+        <h1>Kdrama memory card game</h1>
+    </div>
+    <div class="overlay-text visible">
+        Click for start
+    </div>
+    <div id="game-over-text" class="overlay-text">
+        DEFEAT
+        <span class="overlay-text-small">Click for restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+        VICTORY
+        <span class="overlay-text-small">Click for restart</span>
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time: <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info" id="egyedi">
+                Cards: <span id="megtalalt-kartyak">0</span>
+            </div>
+        </div>
+
+         <!-- Vixx Card -->
+         <div class="card">
+            <div class="card-back card-face">
+                <img class="hatter-kocsi" src="../Images/back.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="../Images/City_Hunter.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="hatter-kocsi" src="../Images/back.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="../Images/City_Hunter.jpg">
+            </div>
+        </div>
+
+</body>
+
+</html>

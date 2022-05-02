@@ -9,7 +9,7 @@ html{
 }
 
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Kepek/good.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/good.jpg);
 
     height: 100vh;
     background-size: cover;
@@ -75,18 +75,18 @@ ul li a:hover{
     font-size: 50px;
 }
 
-.eteles:hover{
-    background-image: url(Kepek/food.jpg);
+.food:hover{
+    background-image: url(../Images/food.jpg);
     
 }
 
-.kocsis:hover{
-    background-image: url(Kepek/kdrama.png);
+.kdrama:hover{
+    background-image: url(../Images/kdrama.png);
     color:#000;
 }
 
-.kpopos:hover{
-    background-image: url(Kepek/kpop.jpg);
+.kpop:hover{
+    background-image: url(../Images/kpop.jpg);
     color: #000;
 }
 
