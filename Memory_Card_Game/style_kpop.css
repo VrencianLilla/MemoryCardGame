@@ -201,3 +201,16 @@ body{
     }
 }
 
+#mute-btn { 
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 16px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+} #mute-btn:hover { background: #444; }
+
