@@ -5,68 +5,73 @@
     box-sizing: border-box;
 }
 
-header{
+header {
     height: 30vh;
     background-size: cover;
     background-position: center;
 }
 
-ul{
-    float:right;
+ul {
+    float: right;
     list-style-type: none;
-    margin-top:25px;
+    margin-top: 25px;
 }
 
-ul li{
+ul li {
     display: inline-block;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
-    color:#fff;
-    padding:5px 20px;
-    border:1px solid transparent;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
 }
 
-ul li a:hover{
+ul li a:hover {
     background-color: #fff;
-    color:#000;
+    color: #000;
 }
 
-.main{
+.main {
     max-width: 1500px;
     margin: auto;
 }
 
-.title{
+.title {
     position: absolute;
     top: 20%;
     left: 50%;
-    transform:translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.title h1{
+.title h1 {
     color: #fff;
     font-size: 50px;
 }
 
-body{
+body.kdrama {
+    background-image: url(../Images/kdrama_background.jpg);
+    background-position: center;
+}
+
+body.kpop {
     background-image: url(../Images/BTSSS.jpg);
     background-position: center;
 }
 
-.game-info-container{
+.game-info-container {
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
 }
 
-.game-info{
-    color:antiquewhite;
+.game-info {
+    color: antiquewhite;
     font-size: 40px;
 }
 
-.game-container{
+.game-container {
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
@@ -75,10 +80,10 @@ body{
     perspective: 500px;
 }
 
-.card{
+.card {
     position: relative;
-    height:150px;
-    width:150px;
+    height: 150px;
+    width: 150px;
 }
 
 .card-face {
@@ -99,6 +104,7 @@ body{
 .card.visible .card-back {
     transform: rotateY(-180deg);
 }
+
 .card.visible .card-front {
     transform: rotateY(0);
 }
@@ -108,16 +114,16 @@ body{
 }
 
 .overlay-text {
-    display:none;
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     justify-content: center;
     align-items: center;
-    z-index:100;
-    color:purple;
+    z-index: 100;
+    color: purple;
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
@@ -126,43 +132,48 @@ body{
     display: block;
 }
 
-.overlay-text.visible{
+.overlay-text.visible {
     display: flex;
     flex-direction: column;
-    animation:overlay-grow 500ms forwards;
+    animation: overlay-grow 500ms forwards;
 }
 
-@keyframes overlay-grow{
+@keyframes overlay-grow {
     from {
-        background-color: rgba(0,0,0, 0);
-        font-size:0;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
     }
-    to{
-        background-color: rgba(0,0,0, .8);
+
+    to {
+        background-color: rgba(0, 0, 0, .8);
         font-size: 10em;
     }
 }
 
 @keyframes dance {
-    0%, 100% {
-        transform:rotate(0);
+
+    0%,
+    100% {
+        transform: rotate(0);
     }
+
     25% {
-        transform:rotate(-30deg);
+        transform: rotate(-30deg);
     }
+
     75% {
         transform: rotate(30deg);
     }
 }
 
-.card-back{
-    background-color:black;
-    border-color:black;
+.card-back {
+    background-color: black;
+    border-color: black;
 }
 
 .card-front {
     background-color: black;
-    border-color:black;
+    border-color: black;
     transform: rotateY(180deg);
 }
 
@@ -171,23 +182,23 @@ body{
     transform: scale(.9);
     height: 150px;
     width: 150px;
-    position:relative;
+    position: relative;
 }
 
-.card-front:hover .card-value{
+.card-front:hover .card-value {
     transform: scale(.8);
 }
 
-.hatter-kocsi{
-    position:absolute;
+.cards-background-back-page {
+    position: absolute;
     width: 150px;
     height: 150px;
     transform: scale(1);
     transition: transform 100ms ease-in-out;
 }
 
-.card-back:hover .hatter-kocsi{
-    transform:scale(.9);
+.card-back:hover .cards-background-back-page {
+    transform: scale(.9);
 }
 
 @media (max-width: 600px) {
@@ -195,13 +206,13 @@ body{
         grid-template-columns: repeat(3, auto);
     }
 
-    .game-info-container{
-        flex-direction:column;
-        align-items:center;
+    .game-info-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-#mute-btn { 
+#mute-btn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -212,5 +223,8 @@ body{
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-} #mute-btn:hover { background: #444; }
+}
 
+#mute-btn:hover {
+    background: #444;
+}

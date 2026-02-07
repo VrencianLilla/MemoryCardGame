@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+html {
+    min-height: 100vh;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/good.jpg);
+
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Menus */
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.main {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.title1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: #fff;
+    font-size: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 70px;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    background-color: #9370DB;
+    border: 5px solid #fff;
+    padding: 150px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.kdrama:hover {
+    background-image: url(../Images/kdrama.png);
+    color: #000;
+}
+
+.kpop:hover {
+    background-image: url(../Images/kpop.jpg);
+    color: #000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.szoveg {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+/* For Phone players */
+@media (max-width: 600px) {
+    h1 {
+        font-size: clamp(24px, 6vw, 48px);
+        margin-bottom: 20px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 60px;
+        /* bring buttons into view */
+    }
+
+    .btn {
+        padding: 20px 10px;
+        /* smaller buttons */
+        font-size: 24px;
+        background-color: #9370DB;
+        border: 3px solid #fff;
+        color: #fff;
+        text-align: center;
+        width: 70%;
+        /* makes them visible and centered */
+    }
+
+    .kdrama:hover,
+    .kpop:hover {
+        background-size: 90%;
+        /* makes the image smaller */
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        /* keeps text visible */
+    }
+
+    header {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+}
