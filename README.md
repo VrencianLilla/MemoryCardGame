@@ -1,4 +1,4 @@
-# Memory Card Game 🧠🎴 (KPOP/KDRAMA Edition)
+# Memory Card Game 🧠🎴 (games/cars Edition)
 A simple web‑based memory card game built with HTML, CSS, and JavaScript.
 The goal is to match pairs of cards while keeping track of your attempts and improving your memory skills.
 

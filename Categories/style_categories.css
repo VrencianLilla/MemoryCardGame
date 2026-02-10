@@ -50,13 +50,13 @@ ul li a:hover {
     font-size: 50px;
 }
 
-body.kdrama {
-    background-image: url(../Images/kdrama_background.jpg);
+body.cars {
+    background-image: url(../Images/car_pink_background.jpg);
     background-position: center;
 }
 
-body.kpop {
-    background-image: url(../Images/BTSSS.jpg);
+body.games {
+    background-image: url(../Images/Game_background.png);
     background-position: center;
 }
 

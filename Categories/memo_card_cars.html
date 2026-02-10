@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="style_categories.css" rel="stylesheet">
+    <script src="script.js" async></script>
+    <title>Memory Card Game</title>
+    <link rel="icon" type="image/png" href="../Images/white.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<header>
+    <div class="main">
+        <ul>
+            <li><a href="../index.html">Main Page</a></li>
+        </ul>
+    </div>
+</header>
+
+<body class="cars" data-category="cars">
+    <div>
+        <div class="title">
+            <h1>Car memory card game</h1>
+        </div>
+        <div class="overlay-text visible">
+            Click for start
+        </div>
+        <div id="game-over-text" class="overlay-text">
+            DEFEAT
+            <span class="overlay-text-small">Click for restart</span>
+        </div>
+        <div id="victory-text" class="overlay-text">
+            VICTORY
+            <span class="overlay-text-small">Click for restart</span>
+        </div>
+        <div class="game-container">
+            <div class="game-info-container">
+                <div class="game-info"> Time: <span id="time-remaining">100</span> </div>
+                <div class="game-info" id="unique"> 
+                    Cards: <span id="total-cards-found">0</span> 
+                </div>
+                 <button id="mute-btn">Mute 🔇</button>
+            </div>
+            <div class="game-container" id="cards"></div>
+        </div>
+</body>

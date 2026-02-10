@@ -158,39 +158,39 @@ class MixOrMatch {
 }
 
 const imageSets = {
-  kdrama: {
+  cars: {
     images: [
-    "City_Hunter.jpg",
-    "W.jpg",
-    "Hotel_Del_Luna.jpg",
-    "Doctor_Strange.jpg",
-    "Itaewon_Class.jpg",
-    "Vincenzo.jpg",
-    "dodosolsollalasol.jpg",
-    "blood.jpg",
-    "ramen_shop.jpg",
-    "Her_Private_Life.jpeg",
-    "Romance_is_a_bonus_book.jpg",
-    "love_alarm.jpg"
+    "toyota.png",
+    "mercedes.png",
+    "renault.jpg",
+    "audi.png",
+    "skoda.png",
+    "honda.jpg",
+    "ferrari.jpg",
+    "ford.png",
+    "citroen.png",
+    "fiat.jpg",
+    "bmw.jpg",
+    "chevrolet.png"
   ],
-  music: "Music/Heize.mp3"
+  music: "Music/blue_ice.mp3"
 },
-  kpop: {
+  games: {
     images: [
-    "bts.jpg",
-    "nct127.jpg",
-    "nuest.jpg",
-    "red_velvet.jpg",
-    "itzy.jpg",
-    "stray_kids.jpg",
-    "ateez.jpg",
-    "black_pink.jpg",
-    "exo1.jpg",
-    "got7.jpg",
-    "monstax.jpg",
-    "tripleH.jpg"
+    "hogwarts.jpg",
+    "repo.jpg",
+    "planet_coaster.jpg",
+    "warframe.png",
+    "fortnite.jpg",
+    "stray.jpg",
+    "silksong.jpg",
+    "jedi.jpg",
+    "warcraft.png",
+    "bronze.jpg",
+    "copycat.jpg",
+    "sims.jpg"
     ],
-    music: "Music/Zico.mp3"
+    music: "Music/Raingame.mp3"
   }
 };
 

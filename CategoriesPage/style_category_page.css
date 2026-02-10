@@ -75,13 +75,13 @@ ul li a:hover {
     font-size: 50px;
 }
 
-.kdrama:hover {
-    background-image: url(../Images/kdrama.png);
+.cars:hover {
+    background-image: url(../Images/car_pink_background.jpg);
     color: #000;
 }
 
-.kpop:hover {
-    background-image: url(../Images/kpop.jpg);
+.games:hover {
+    background-image: url(../Images/Game_background.png);
     color: #000;
 }
 
@@ -154,8 +154,8 @@ ul li a:hover {
         /* makes them visible and centered */
     }
 
-    .kdrama:hover,
-    .kpop:hover {
+    .cars:hover,
+    .games:hover {
         background-size: 90%;
         /* makes the image smaller */
         background-position: center;
